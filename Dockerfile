@@ -1,8 +1,8 @@
-FROM ubuntu:bionic
+FROM alpine:3.8
 
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update -qqy
-RUN apt-get install vlc sudo -qqy
+#ENV DEBIAN_FRONTEND=noninteractive
+#RUN apt-get update -qqy
+RUN apk add vlc-daemon vlc-dev 
 
 RUN mkdir -p /opt/vlc-media
 
