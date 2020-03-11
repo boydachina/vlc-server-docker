@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+   iperf3:
+      image: iitgdocker/iperf-server:latest 
+      ports:
+         - 5001:5001/udp
+      networks: 
+         - iperf
+networks: 
+   iperf:
