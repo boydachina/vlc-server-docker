@@ -3,8 +3,7 @@
 ## Build and run as
 
 ```bash
-~docker swarm init~
-docker build -t vlc-server .
+docker swarm init
 docker stack deploy -c vlc-compose.yaml vlc
 ```
 After to watch video use command:
