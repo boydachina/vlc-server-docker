@@ -9,5 +9,5 @@ docker stack deploy -c vlc-compose.yaml vlc
 ```
 After to watch video use command:
 ```bash
-vlc rtsp://127.0.0.1:8554/
+vlc http://127.0.0.1:8080/
 ```
