@@ -1,9 +1,10 @@
 FROM ubuntu:bionic
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update -qqy
-RUN apt-get install vlc sudo -qqy
-
+RUN apt-get update && apt-get install -y \
+  vlc \
+  wget
+    
 RUN mkdir -p /opt/vlc-media
 
 #COPY ./media/* /opt/vlc-media/
